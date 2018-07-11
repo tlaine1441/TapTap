@@ -7,6 +7,7 @@ import Loading from './components/Loading'
 import SignUp from './components/SignUp'
 import Login from './components/Login'
 import Main from './components/Main'
+import Config from './Config/config'
 
 
 // // Initialize Firebase
@@ -135,12 +136,12 @@ import Main from './components/Main'
 // });
 
 var config = {
-    apiKey: "AIzaSyAsR8ryHhRcDeKqA3S2VAKl4Qx-XsSWFBk",
-    authDomain: "taptap-5e974.firebaseapp.com",
-    databaseURL: "https://taptap-5e974.firebaseio.com",
-    projectId: "taptap-5e974",
-    storageBucket: "taptap-5e974.appspot.com",
-    messagingSenderId: "946294594976"
+    apiKey: Config.apiKey,
+    authDomain: Config.authDomain,
+    databaseURL: Config.databaseURL,
+    projectId: Config.projectId,
+    storageBucket: Config.storageBucket,
+    messagingSenderId: Config.messagingSenderId
 };
 firebase.initializeApp(config);
 
