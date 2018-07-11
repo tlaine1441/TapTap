@@ -6,7 +6,7 @@
 # dependencies
 /node_modules
 
-Config
+Config/
 
 # misc
 .env.local
