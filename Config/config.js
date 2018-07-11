@@ -1,4 +1,4 @@
-const Nav = {
+const Config = {
     apiKey: "AIzaSyAsR8ryHhRcDeKqA3S2VAKl4Qx-XsSWFBk",
     authDomain: "taptap-5e974.firebaseapp.com",
     databaseURL: "https://taptap-5e974.firebaseio.com",
@@ -8,4 +8,4 @@ const Nav = {
 }
 
 
-export default Nav
+export default Config
