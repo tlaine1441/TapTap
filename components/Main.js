@@ -32,12 +32,13 @@ export default class Main extends React.Component {
             userTime: milliSeconds,
             timer: milliSeconds + " ms",
         })
+
         const { currentUser } = firebase.auth();
         let updates = {}
         updates[`users/${currentUser.uid}/`] =
-            {
-                'gameTime': milliSeconds,
-            }
+        {
+            'gameTime': milliSeconds,
+        }
         firebase.database().ref().update(updates);
         console.log(milliSeconds + " MS");
     }
@@ -66,9 +67,9 @@ export default class Main extends React.Component {
         this.setState({ currentUser })
         let updates = {};
         updates[`users/${currentUser.uid}/`] =
-            {
-                'gameTime': '',
-            }
+        {
+            'gameTime': '',
+        }
         firebase.database().ref().update(updates);
         // Initial game countdown
         // Start timer
@@ -126,7 +127,8 @@ const styles = StyleSheet.create({
     container: {
         flex: 1,
         justifyContent: 'center',
-        alignItems: 'center'
+        alignItems: 'center',
+        width: '100%'
     },
     tapButton: {
         backgroundColor: '#ff0059',
@@ -143,6 +145,6 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
     },
     tapButtonText: {
-        fontSize: 50
+        fontSize: 40
     },
 })
